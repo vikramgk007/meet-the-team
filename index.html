@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Team!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <style>
+    
+	body{
+	  font-family: "Montserrat",sans-serif;
+	}
+	
+    .user-profile{
+	  padding: 0 8px 0 30px;
+	  font-size: 16px;
+	  margin: auto !important;
+	}
+	
+	.user-profile.odd{
+	  background-image: linear-gradient(178deg, transparent 0%, transparent 13%, black 13.2%, black 83%, transparent 83.2%, transparent 100%);
+	  background-size: cover;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  color: white;
+	  box-shadow; 0 .5rem 1rem rgba(0,0,0,.15)!important;
+	  width: 100%;
+	  padding: 110px 150px;
+	}
+	
+	.user-profile.even{
+	  background-color: white;
+	  padding: 0 110px;
+	  margin: 0 -60px;
+	  width: 100%;
+	}
+	
+	.user-img{
+	  text-align: center;
+	}
+	
+	.user-image{
+	  border-radius: 75%;
+	  max-width: 300px;
+	  padding-bottom: 10px;
+	}
+	
+	.user-name{
+	  font-size: 36px;
+	  text-transform: uppercase;
+	}
+	
+	.user-title{
+	  font-size: 18px;
+	  text-transform: uppercase;
+	}
+	
+	.user-bio{
+	  font-size: 16px;
+	  font-weight: 500;
+	}
+	
+	.user-profile.odd > .user-name-title-bio{
+	  text-shadow: 1px 1px #000000;
+	}
+	
+	.meet-the-team{
+	  font-size: 50px;
+	  padding: 20px;
+	}
+	
+	@media (max-width: 768px) {
+    /* CSS styles for screens 768px and below go here col-md*/
+	  .user-profile.even{
+	    display: flex;
+		flex-direction: column-reverse;
+	  }
+	  
+	  .user-profile.odd{
+	    background-image: linear-gradient(176deg, transparent 0%, transparent 13%, black 13.2%, black 93%, transparent 93.2%, transparent 100%);
+	  }
+    }
+  </style>
+</head>
+<body>
+
+      <b><center class="meet-the-team">Meet the Team!</center></b><br/><br/>
+	  
+	  <div class="row user-profile odd">
+		<div class="col-md-5 user-img"><img class="user-image" src="Ines.jpg" width="100%"></div>
+		<div class="col-md-7 user-name-title-bio">
+		  <span class="user-name">Ines Ouali</span><br/>
+		  <span class="user-title">e-Learning Facilitator / Coach</span><br/><br/>
+		  <span class="user-bio"><p>Ines Ouali (she/her) has taught French as a second language for over 12 years to senior-level public servants working for the Canadian federal government. During that time, she took a major step in her life to fulfill a dream: to thoroughly visit good old Britain and achieve two master's degrees. One in International Studies and one in Criminology from Durham University (UK). Ines joined ICTC in Feb 2021 and continues to contribute to the company's ongoing expansion.</p></span>
+		</div>
+	  </div>
+	  
+	  <div class="row user-profile even">
+		<div class="col-md-7 user-name-title-bio">
+		  <span class="user-name">Angela Stanley</span><br/>
+		  <span class="user-title">e-Learning Facilitator / Coach</span><br/><br/>
+		  <span class="user-bio"><p>Angela Stanley (she/her) is an educator and facilitator with over 6 years of experience in the post-secondary academic sector. Accessibility is a core principle of her research, work, and teaching style and as a facilitator for the WIL e-learning team she enjoys fostering learning environments that promote student success.</p></span>
+		</div>
+		<div class="col-md-5 user-img"><img class="user-image" src="Angela.jpg" width="100%"></div>
+
+	  </div>
+	  
+	  <div class="row user-profile odd">
+		<div class="col-md-5 user-img"><img class="user-image" src="David.jpg" width="100%"></div>
+		<div class="col-md-7 user-name-title-bio">
+		  <span class="user-name">David Reyes</span><br/>
+		  <span class="user-title">e-Learning Facilitator / Coach</span><br/><br/>
+		  <span class="user-bio"><p>David is a dynamic language professional and anthropologist with over five years of experience teaching languages both in Canada and abroad. His passion for language teaching, instructional design, and digital literacy education has led him to explore new and innovative ways to deliver engaging, effective learning experiences that leverage trending technologies. With a Master's degree in Bilingualism Studies from the University of Ottawa, David is particularly interested in community-based learning, and has a deep desire to bridge the gap between education and cultural immersion. He believes in empowering learners to not only acquire knowledge, but also to truly understand and appreciate the cultures and contexts where learning happens. As an avid reader with a passion for literature, David likes to explore Francophone literatures from the Americas and the Caribbean.</p></span>
+		</div>
+	  </div>
+	  
+
+</body>
+</html>
