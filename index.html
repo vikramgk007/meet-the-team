@@ -113,16 +113,15 @@
 		</div>
 	  </div>
 <script>	  
-function adjustIframeHeight() {
-  const iframe = document.getElementById("my-iframe");
-  if (iframe) {
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
-  }
+// Function to send the iframe's content height to the parent window
+function sendHeightToParent() {
+    const contentHeight = document.body.scrollHeight;
+    parent.postMessage(contentHeight, "https://your-website.com");
 }
 
-// Adjust the iframe height when the content is loaded and when the window is resized
-window.addEventListener("load", adjustIframeHeight);
-window.addEventListener("resize", adjustIframeHeight);
+// Trigger the function to send the height when the content changes
+window.addEventListener("resize", sendHeightToParent);
+window.addEventListener("DOMContentLoaded", sendHeightToParent);
 </script>
 </body>
 </html>
