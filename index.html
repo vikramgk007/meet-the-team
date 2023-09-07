@@ -112,7 +112,17 @@
 		  <span class="user-bio"><p>David is a dynamic language professional and anthropologist with over five years of experience teaching languages both in Canada and abroad. His passion for language teaching, instructional design, and digital literacy education has led him to explore new and innovative ways to deliver engaging, effective learning experiences that leverage trending technologies. With a Master's degree in Bilingualism Studies from the University of Ottawa, David is particularly interested in community-based learning, and has a deep desire to bridge the gap between education and cultural immersion. He believes in empowering learners to not only acquire knowledge, but also to truly understand and appreciate the cultures and contexts where learning happens. As an avid reader with a passion for literature, David likes to explore Francophone literatures from the Americas and the Caribbean.</p></span>
 		</div>
 	  </div>
-	  
+<script>	  
+function adjustIframeHeight() {
+  const iframe = document.getElementById("my-iframe");
+  if (iframe) {
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+  }
+}
 
+// Adjust the iframe height when the content is loaded and when the window is resized
+window.addEventListener("load", adjustIframeHeight);
+window.addEventListener("resize", adjustIframeHeight);
+</script>
 </body>
 </html>
