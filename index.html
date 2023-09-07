@@ -112,16 +112,13 @@
 		  <span class="user-bio"><p>David is a dynamic language professional and anthropologist with over five years of experience teaching languages both in Canada and abroad. His passion for language teaching, instructional design, and digital literacy education has led him to explore new and innovative ways to deliver engaging, effective learning experiences that leverage trending technologies. With a Master's degree in Bilingualism Studies from the University of Ottawa, David is particularly interested in community-based learning, and has a deep desire to bridge the gap between education and cultural immersion. He believes in empowering learners to not only acquire knowledge, but also to truly understand and appreciate the cultures and contexts where learning happens. As an avid reader with a passion for literature, David likes to explore Francophone literatures from the Americas and the Caribbean.</p></span>
 		</div>
 	  </div>
-<script>	  
-// Function to send the iframe's content height to the parent window
-function sendHeightToParent() {
-    const contentHeight = document.body.scrollHeight;
-    parent.postMessage(contentHeight, "https://etalentcanada.ca/for-job-seekers/programs/wil-digital-e-learning-courses/meet-the-team");
-}
-
-// Trigger the function to send the height when the content changes
-window.addEventListener("resize", sendHeightToParent);
-window.addEventListener("DOMContentLoaded", sendHeightToParent);
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.min.js"></script>
+<script>
+  // Initialize the iframe-resizer library
+iFrameResize({
+  log: false, // Set to true to enable logging
+  checkOrigin: false, // Set to false to allow cross-origin resizing
+}, "#my-iframe");
 </script>
 </body>
 </html>
